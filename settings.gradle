@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        maven {
+            url "http://maven.nodle.io"
+            allowInsecureProtocol = true
+        }
+
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven {
+            url "http://maven.nodle.io"
+            allowInsecureProtocol = true
+        }
+
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "NodleSDKQuickStartAndroid"
+include ':app'
