@@ -45,5 +45,5 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxCoroutine"
 
     // Nodle SDK
-    implementation 'io.nodle:nodlesdk-rc-lp:95a5b4f577'
+    implementation 'io.nodle:nodlesdk-rc-lp:e61c593b4d'
 }
