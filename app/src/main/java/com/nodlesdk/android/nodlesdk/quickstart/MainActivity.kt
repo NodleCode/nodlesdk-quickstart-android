@@ -15,6 +15,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // add debug logs
+        Nodle.Nodle().config("core.debug-log.enable", true)
+
+        // set bg mode - make sure to enable permissions manually
+        Nodle.Nodle().config("heartbeat.background-mode", true)
+
+        // set ble bg mode - make sure to enable permissions manually
+        Nodle.Nodle().config("ble.background-mode", true)
+
         // start Nodle -> add the key in the following format -> ss58:your-public-key
         Nodle.Nodle().start( "ss58:your-public-key-here", "tag1", "tag2")
 

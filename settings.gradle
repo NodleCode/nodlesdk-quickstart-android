@@ -23,6 +23,12 @@ dependencyResolutionManagement {
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
+
+    buildscript {
+        dependencies {
+            classpath 'com.google.gms:google-services:4.3.10'    // Google Services plugin
+        }
+    }
 }
 rootProject.name = "NodleSDKQuickStartAndroid"
 include ':app'
