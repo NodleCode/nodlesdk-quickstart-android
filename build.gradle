@@ -17,3 +17,23 @@ ext {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+
+buildscript {
+    repositories {
+        google()
+        maven {
+            url "http://maven.nodle.io"
+            allowInsecureProtocol = true
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        maven { 
+            url "http://maven.nodle.io" 
+            allowInsecureProtocol = true
+        }
+    }
+}
